@@ -25,9 +25,9 @@ public class modelSql {
         if (koneksi == null){
             
             try{
-                String url = "jdbc:mysql://sql6.freemysqlhosting.net:3306/sql6162729?useSSL=true";
-                String user = "sql6162729";
-                String pass = "2iqt6ykTYV";
+                String url = "jdbc:mysql://localhost:3306/dbcmt?useSSL=true";
+                String user = "root";
+                String pass = "0110";
                 
                 DriverManager.registerDriver(new com.mysql.jdbc.Driver());
                 

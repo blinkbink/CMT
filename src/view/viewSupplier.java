@@ -217,7 +217,7 @@ public class viewSupplier extends javax.swing.JFrame {
         }
         catch(Exception e)
         {
-            JOptionPane.showMessageDialog(null, "Silahkan Pilih list terlebih dahulu");
+            JOptionPane.showMessageDialog(null, "Silahkan Pilih list colomn IDSupplier untuk menghapus");
         }
     }//GEN-LAST:event_deleteactionActionPerformed
 

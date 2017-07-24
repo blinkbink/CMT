@@ -26,9 +26,6 @@ public class viewLogin extends javax.swing.JFrame {
     /**
      * Creates new form login
      */
-    
-    
-    
     public viewLogin() {
         initComponents();
         setTitle("Welcome");
@@ -38,9 +35,9 @@ public class viewLogin extends javax.swing.JFrame {
         Connection koneksi=null;
         if (koneksi == null){
             try{
-                String url = "jdbc:mysql://sql6.freemysqlhosting.net:3306/sql6162729?useSSL=true";
-                String user = "sql6162729";
-                String pass = "2iqt6ykTYV";
+                String url = "jdbc:mysql://localhost:3306/cmt?useSSL=true";
+                String user = "root";
+                String pass = "0110";
                 
                 DriverManager.registerDriver(new com.mysql.jdbc.Driver());
                 
@@ -93,7 +90,7 @@ public class viewLogin extends javax.swing.JFrame {
                 if(baris == 1){
                     JOptionPane.showMessageDialog(null, "Selamat Datang, " +user);
                     this.dispose();
-                    new viewWorkdesk().setVisible(true);
+                    new mainFrame().setVisible(true);
                 }
                 else{
                     JOptionPane.showMessageDialog(null, "Username atau Password Yang Anda Masukan Salah !");
@@ -231,7 +228,6 @@ public class viewLogin extends javax.swing.JFrame {
      * @param args the command line arguments
      */
    
-
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;

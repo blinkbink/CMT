@@ -10,6 +10,10 @@ import javax.swing.JOptionPane;
 import javax.swing.UIManager;
 import javax.swing.UIManager.LookAndFeelInfo;
 import model.modelSql;
+import view.mainFrame;
+import view.Master.tambahsupplierDialog;
+import view.Transaksi.tambahsuratjalanDialog;
+import view.loginFrame;
 import view.viewCustomerInsert;
 import view.viewLogin;
 import view.viewSupplierInsert;
@@ -28,9 +32,8 @@ public class CVMULTITECH {
         ui();
         modelSql sql = new modelSql();
 
-        viewSupplier frame = new viewSupplier();
-        frame.setVisible(true);
-        
+        loginFrame frame = new loginFrame();
+        frame.setVisible(true);   
     }
     
     public static void ui()
@@ -50,8 +53,6 @@ public class CVMULTITECH {
                 // not worth my time
             }
         }
-
-        
 }
     
 }

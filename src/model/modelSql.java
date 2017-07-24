@@ -25,7 +25,7 @@ public class modelSql {
         if (koneksi == null){
             
             try{
-                String url = "jdbc:mysql://localhost:3306/dbcmt?useSSL=true";
+                String url = "jdbc:mysql://localhost:3306/cmt?useSSL=true";
                 String user = "root";
                 String pass = "0110";
                 

@@ -5,6 +5,12 @@
  */
 package view;
 
+import view.Transaksi.tambahpembelianDialog;
+import view.Transaksi.tambahsuratjalanDialog;
+import view.Master.tambahcustomerDialog;
+import view.Master.tambahsupplierDialog;
+import view.Master.tambahbarangDialog;
+
 /**
  *
  * @author ASUS
@@ -13,7 +19,9 @@ public class mainFrame extends javax.swing.JFrame {
 
     /**
      * Creates new form mainFrame
+     * @param user
      */
+
     public mainFrame() {
         initComponents();
     }
@@ -147,7 +155,7 @@ public class mainFrame extends javax.swing.JFrame {
             .addGroup(homePanelLayout.createSequentialGroup()
                 .addGap(34, 34, 34)
                 .addComponent(jLabel19)
-                .addContainerGap(356, Short.MAX_VALUE))
+                .addContainerGap(359, Short.MAX_VALUE))
         );
 
         jPanel1.add(homePanel, "card6");
@@ -169,6 +177,11 @@ public class mainFrame extends javax.swing.JFrame {
         });
 
         tambahcustomerButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/masterdatapanel.png"))); // NOI18N
+        tambahcustomerButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tambahcustomerButtonActionPerformed(evt);
+            }
+        });
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel2.setText(" Tambah Customer");
@@ -623,11 +636,12 @@ public class mainFrame extends javax.swing.JFrame {
 
     private void tambahbarangButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tambahbarangButtonActionPerformed
         // TODO add your handling code here:
+        tambahbarangDialog tambahBarang = new tambahbarangDialog();
+        tambahBarang.setVisible(true);
     }//GEN-LAST:event_tambahbarangButtonActionPerformed
 
     private void datacustomerButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_datacustomerButtonActionPerformed
-        // TODO add your handling code here:
-        
+        // TODO add your handling code here:       
     }//GEN-LAST:event_datacustomerButtonActionPerformed
 
     private void databarangButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_databarangButtonActionPerformed
@@ -670,14 +684,20 @@ public class mainFrame extends javax.swing.JFrame {
 
     private void tambahsupplierButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tambahsupplierButtonActionPerformed
         // TODO add your handling code here:
+        tambahsupplierDialog tambahsupplier = new tambahsupplierDialog();
+        tambahsupplier.setVisible(true);
     }//GEN-LAST:event_tambahsupplierButtonActionPerformed
 
     private void suratjalanButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_suratjalanButtonActionPerformed
         // TODO add your handling code here:
+        tambahsuratjalanDialog tambahsuratjalan = new tambahsuratjalanDialog();
+        tambahsuratjalan.setVisible(true);
     }//GEN-LAST:event_suratjalanButtonActionPerformed
 
     private void pembelianButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pembelianButtonActionPerformed
         // TODO add your handling code here:
+        tambahpembelianDialog tambahPembelian = new tambahpembelianDialog();
+        tambahPembelian.setVisible(true);
     }//GEN-LAST:event_pembelianButtonActionPerformed
 
     private void tambahuserButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tambahuserButtonActionPerformed
@@ -696,6 +716,12 @@ public class mainFrame extends javax.swing.JFrame {
         laporanPanel.setVisible(false);
         pengaturanPanel.setVisible(true);
     }//GEN-LAST:event_pengaturanButtonActionPerformed
+
+    private void tambahcustomerButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tambahcustomerButtonActionPerformed
+        // TODO add your handling code here:
+        tambahcustomerDialog tambahCustomer = new tambahcustomerDialog();
+        tambahCustomer.setVisible(true);
+    }//GEN-LAST:event_tambahcustomerButtonActionPerformed
 
     /**
      * @param args the command line arguments

@@ -123,7 +123,7 @@ public class viewWorkdesk extends javax.swing.JFrame {
     
     public void dispose() {
         int dialogButton = JOptionPane.YES_NO_OPTION;
-        int dialogResult = JOptionPane.showConfirmDialog (null, "Would You Like to Save your Previous Note First?","Warning",dialogButton);
+        int dialogResult = JOptionPane.showConfirmDialog (null, "Yakin akan keluar dari aplikasi ini ??","Warning",dialogButton);
         if(dialogResult == JOptionPane.YES_OPTION){
             this.setVisible(false);
 
